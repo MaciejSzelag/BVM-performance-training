@@ -1,0 +1,78 @@
+.form-wrap {
+    @include f_center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    min-height: 50vh;
+
+
+
+    form {
+        @include f_center;
+        width: 30%;
+        flex-direction: column;
+        padding: 50px;
+        border: 1px solid black;
+        // background-color: white;
+        // background-color: rgb(0, 68, 140);
+        box-shadow: 0 0 3px 2px grey;
+
+        h1 {
+            font-size: 3rem;
+            // color: white;
+        }
+
+        .form-title {
+            margin: 10px 0;
+        }
+
+        .input-group {
+            @include f_center;
+            flex-direction: column;
+            margin: 10px 0;
+
+            select {
+                margin: 10px;
+                padding: 5px 10px;
+
+
+            }
+
+            label {
+                font-size: 1.5rem;
+                // color: white;
+            }
+
+            input {
+                padding: 5px 10px;
+                // color: white;
+            }
+
+
+            input::placeholder {
+                color: rgb(199, 199, 199);
+                font-size: 1.2rem;
+            }
+
+            input[type=submit] {
+                // background-color: $main_Dark_blue;
+                background-color: rgb(1, 154, 255);
+                color: whitesmoke;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 50px;
+                transition: .3s linear;
+                cursor: pointer;
+                border: 1px solid $main_Dark_blue;
+            }
+
+            input:hover[type=submit] {
+                background-color: whitesmoke;
+                color: $mainBlack;
+                border: 1px solid $main_Dark_blue;
+
+            }
+        }
+
+    }
+}

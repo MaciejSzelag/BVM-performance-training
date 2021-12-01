@@ -1,0 +1,62 @@
+.form-wrap {
+    @include f_center;
+    width: 100%;
+    height: 100vh;
+
+
+
+    form {
+        @include f_center;
+        width: 30%;
+        flex-direction: column;
+        padding: 50px;
+        // border: 1px solid rgb(10, 10, 10);
+        // background-color: $mainBlack;
+        // box-shadow: 0 0 3px 2px $mainYellow;
+        box-shadow: 0 10px 15px 5px grey;
+        border-radius: 10px;
+
+        .form-title {
+            margin: 10px 0;
+        }
+
+        .input-group {
+            @include f_center;
+            flex-direction: column;
+            margin: 10px 0;
+
+            label {
+                font-size: 1.5rem;
+            }
+
+            input {
+                padding: 5px 10px;
+            }
+
+            input::placeholder {
+                color: rgb(199, 199, 199);
+                font-size: 1.2rem;
+            }
+
+            input[type=submit] {
+                background-color: $main_Dark_blue;
+                background-color: green;
+                color: whitesmoke;
+                border: none;
+                padding: 5px 50px;
+                transition: .3s linear;
+                cursor: pointer;
+                // border: 1px solid $main_Dark_blue;
+                border: 1px solid green;
+            }
+
+            input:hover[type=submit] {
+                background-color: whitesmoke;
+                color: $mainBlack;
+                border: 1px solid $main_Dark_blue;
+
+            }
+        }
+
+    }
+}
